@@ -1,0 +1,98 @@
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/sass/abstracts/fonts.css ***!
+  \********************************************************************************/
+/* ibm-plex-sans-100 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url(dd0dd6de2a3a2ba9768e.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(dd0dd6de2a3a2ba9768e.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(5b635f93dc05d2f931ce.woff2) format('woff2'), /* Super Modern Browsers */
+       url(00e02a73953ad8e9c434.woff) format('woff'), /* Modern Browsers */
+       url(dd78b917667a15bdbccb.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(6d8988facd9ed62170aa.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-300 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(7f9b8ed56f6cec96b69e.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(7f9b8ed56f6cec96b69e.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(f598a9018023874fcb06.woff2) format('woff2'), /* Super Modern Browsers */
+       url(048289d334fed8231382.woff) format('woff'), /* Modern Browsers */
+       url(7cff4b98b7ed723b6aed.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(164cb413e3fd87aabcb1.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-200 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: url(b16c2238f201f5f04983.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(b16c2238f201f5f04983.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(170b67a3b9ce6cc2b71f.woff2) format('woff2'), /* Super Modern Browsers */
+       url(293dff6bdc34e99f237b.woff) format('woff'), /* Modern Browsers */
+       url(cc5ab7fd2260b7a24df8.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(49594282dbe5c8245c5e.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(b872e01e9880a2a209e4.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(b872e01e9880a2a209e4.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(4d32b6c22a800bdf8260.woff2) format('woff2'), /* Super Modern Browsers */
+       url(31490b338d5ed4da4d8a.woff) format('woff'), /* Modern Browsers */
+       url(b2ddc35e597d41132e12.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(240a4af036e2592b538a.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-500 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(6464da51a00728f73a56.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(6464da51a00728f73a56.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(51f75d450b3474fa5f0e.woff2) format('woff2'), /* Super Modern Browsers */
+       url(8b83958992d221a833fd.woff) format('woff'), /* Modern Browsers */
+       url(52c15a2ebe6aeacf3eac.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(ab7bb2624c2144aabb15.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-600 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(e7a45aecba4aaefba74c.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(e7a45aecba4aaefba74c.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(343ea5304f9ab1a7567b.woff2) format('woff2'), /* Super Modern Browsers */
+       url(eaf750b1a0f4a2cdadd7.woff) format('woff'), /* Modern Browsers */
+       url(0153da36bb069aefb5e9.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(0ebd522612496cd779ee.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(5e6e873bc9a1931f04c3.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(5e6e873bc9a1931f04c3.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(db8b76340f5e9fb22749.woff2) format('woff2'), /* Super Modern Browsers */
+       url(66539165a16bc1389fce.woff) format('woff'), /* Modern Browsers */
+       url(0b894494c8e4d4ef3a33.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(942d46ceb97f760a5611.svg#IBMPlexSans) format('svg'); /* Legacy iOS */
+}
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \**********************************************************************************************************/
+
