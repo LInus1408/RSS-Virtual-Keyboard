@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -21,6 +21,7 @@ const config = {
     host: "localhost",
   },
   plugins: [
+    new ESLintPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
