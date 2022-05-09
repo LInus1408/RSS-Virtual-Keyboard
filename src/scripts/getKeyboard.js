@@ -1,3 +1,5 @@
+import  {ObjKeys} from './keys.js';
+
 function getKeyboard() {
   const mainTitle = document.createElement('h1');
   mainTitle.className = "mainTitle";
@@ -41,6 +43,17 @@ function getKeyboard() {
         keyboardLine.append(key);
       }
   }
+
+  const keys = document.querySelectorAll('.keyboard__key');
+
+  const descLangSwitch = document.createElement('p');
+  descLangSwitch.className = "text-lang";
+  descLangSwitch.innerHTML = 'To switch the language combination: left ctrl + alt'
+  document.body.append(descLangSwitch);
+
+  keys.forEach((item, index) => {
+    item.innerHTML = ObjKeys.en[index]
+  })
 }
   
   export {getKeyboard}; 
