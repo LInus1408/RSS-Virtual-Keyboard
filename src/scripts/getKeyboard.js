@@ -13,7 +13,7 @@ function getKeyboard() {
   const keyboardScreen = document.createElement('textarea');
   keyboardScreen.className = "keyboard-Screen";
   keyboardScreen.setAttribute('name', 'screen');
-  keyboardScreen.setAttribute('rows', 20)
+  keyboardScreen.setAttribute('rows', 15)
   keyboardScreen.setAttribute('cols', 80)
   appKeyboard.append(keyboardScreen);
 
@@ -33,7 +33,7 @@ function getKeyboard() {
     } else if(i == 3) {
        keysNumbers = 13;
     } else if(i == 4) {
-       keysNumbers = 14;
+       keysNumbers = 13;
     } else if(i == 5) {
        keysNumbers = 9;
     }
@@ -46,6 +46,7 @@ function getKeyboard() {
 
   const keys = document.querySelectorAll('.keyboard__key');
 
+  keys[0].classList.add("keyboard__key_special")
   const descLangSwitch = document.createElement('p');
   descLangSwitch.className = "text-lang";
   descLangSwitch.innerHTML = 'To switch the language combination: left ctrl + alt'
@@ -54,6 +55,7 @@ function getKeyboard() {
   keys.forEach((item, index) => {
     item.innerHTML = ObjKeys.en[index]
   })
+
 }
   
   export {getKeyboard}; 
