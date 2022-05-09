@@ -1,1 +1,3 @@
-console.log("Hello World!");
+import  {getKeyboard} from './scripts/getKeyboard.js';
+
+getKeyboard()

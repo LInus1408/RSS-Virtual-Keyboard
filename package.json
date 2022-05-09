@@ -43,6 +43,7 @@
     "workbox-webpack-plugin": "^6.5.3"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^4.0.0"
+    "clean-webpack-plugin": "^4.0.0",
+    "normalize.css": "^8.0.1"
   }
 }
