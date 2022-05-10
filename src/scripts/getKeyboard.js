@@ -1,6 +1,6 @@
 import  {ObjKeys, keyCode} from './keys.js';
 
-function getKeyboard() {
+function getKeyboard(lang) {
   const mainTitle = document.createElement('h1');
   mainTitle.className = "mainTitle";
   mainTitle.innerHTML = 'Virtual Keyboard'
@@ -56,10 +56,15 @@ function getKeyboard() {
   descLangSwitch.innerHTML = 'To switch the language combination: left ctrl + alt'
   document.body.append(descLangSwitch);
 
-  keys.forEach((item, index) => {
-    item.innerHTML = ObjKeys.en[index]
-  })
-
+  if(lang == 'ru') {
+   keys.forEach((item, index) => {
+      item.innerHTML = ObjKeys.ru[index]
+    })
+  } else {
+   keys.forEach((item, index) => {
+      item.innerHTML = ObjKeys.en[index]
+    })
+  }
 }
   
   export {getKeyboard}; 
