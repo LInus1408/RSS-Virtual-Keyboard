@@ -1,0 +1,50 @@
+@import "~normalize.css";
+@import "./sass/base/fonts.css";
+@import "./sass/base/reset.scss";
+@import "./sass/abstracts/variables.scss";
+@import "./sass/abstracts/mixins.scss";
+@import "./sass/components/buttons.scss";
+
+
+body {
+  background-color: #0c1017;
+}
+.mainTitle {
+  text-align: center;
+  max-width: 500px;
+  margin: 50px auto;
+  @include font(700, 44px, 44px, $color-font1);
+}
+.app-keyboard {
+  max-width: 720px;
+  margin: auto;
+  @include flex-block(center, column, center);
+}
+.keyboard-Screen {
+  width: 100%;
+  border: 2px solid $color-border1;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.keyboard {
+  @include flex-block(center, column, center);
+  background-color: $bcgColor1;
+  width: 100%;
+  border: 2px solid #f6ff68;
+  border-radius: 3px;
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.keyboard_line {
+  @include flex-block(space-between, row, center);
+  width: 100%;
+  gap: 5px;
+}
+
+.text-lang {
+  text-align: center;
+  @include font(500, 16px, 16px, $color-font2);
+  margin-top: 50px;
+}

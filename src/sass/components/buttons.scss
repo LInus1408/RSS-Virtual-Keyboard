@@ -1,0 +1,114 @@
+.keyboard__key {
+  width: 40px;
+  height: 40px;
+  background-color: #444444;
+  text-align: center;
+  border-radius: 2px;
+  @include font(500, 14px, 40px, $color-font2);
+    &:hover {
+      box-shadow: 0px 2px 15px 4px  #1abc9c;
+        cursor: pointer;
+    }
+}
+
+.keyboard__key-active {
+  background: #ede4f9 !important; 
+  box-shadow: 0px 2px 15px 4px  #1abc9c;
+  color: #000;
+}
+
+.keyboard__key[data-code="Backquote"] {
+  background-color: #1b212e;
+}
+.keyboard__key[data-code="Backspace"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 100px;
+}
+.keyboard__key[data-code="Tab"] {
+  background-color: #1b212e;
+  width: 50px;
+  font-weight: 700;
+}
+.keyboard__key[data-code="Delete"] {
+  background-color: #1b212e;
+  font-weight: 700;
+}
+.keyboard__key[data-code="CapsLock"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 96px;
+}
+.keyboard__key[data-code="Enter"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 96px;
+}
+.keyboard__key[data-code="ShiftLeft"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 96px;
+}
+.keyboard__key[data-code="ShiftRight"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 96px;
+}
+.keyboard__key[data-code="ControlLeft"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 96px;
+}
+
+.keyboard__key[data-code="ControlRight"] {
+  background-color: #1b212e;
+  font-weight: 700;
+  width: 49px;
+}
+
+.keyboard__key[data-code="ShiftRight"] {
+  background-color: #1b212e;
+  font-weight: 700;
+}
+
+.keyboard__key[data-code="MetaLeft"] {
+  background-color: #1b212e;
+  font-weight: 700;
+}
+.keyboard__key[data-code="AltLeft"] {
+  background-color: #1b212e;
+  font-weight: 700;
+}
+.keyboard__key[data-code="AltRight"] {
+  background-color: #1b212e;
+  font-weight: 700;
+}
+.keyboard__key[data-code="Space"] {
+  background-color: #1b212e;
+  width: 262px;
+}
+
+.keyboard__key[data-code="ArrowUp"] {
+  background-color: #30022f;
+  font-weight: 700;
+  color: orange;
+}
+.keyboard__key[data-code="ArrowDown"] {
+  background-color: #30022f;
+  font-weight: 700;
+  color: orange;
+}
+.keyboard__key[data-code="ArrowRight"] {
+  background-color: #30022f;
+  font-weight: 700;
+  color: orange;
+}
+.keyboard__key[data-code="ArrowLeft"] {
+  background-color: #30022f;
+  font-weight: 700;
+  color: orange;
+}
+
+
+
+
