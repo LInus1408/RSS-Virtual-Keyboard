@@ -79,6 +79,7 @@ function clickMouseKey(event, keyboardScreen) {
     } else if(event.getAttribute('data-code') == 'MetaLeft') {
       event.classList.add("keyboard__key-active")
     } else if(event.getAttribute('data-code') == 'Space') {
+      event.classList.add("keyboard__key-active")
       keyboardScreen.innerHTML = keyboardScreen.innerHTML + ' '
     }
     else if(event.getAttribute('data-code') == 'Enter') {
