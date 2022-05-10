@@ -15,6 +15,7 @@ function getKeyboard() {
   keyboardScreen.setAttribute('name', 'screen');
   keyboardScreen.setAttribute('rows', 15)
   keyboardScreen.setAttribute('cols', 80)
+  keyboardScreen.setAttribute('disabled', 'disabled')
   appKeyboard.append(keyboardScreen);
 
   const keyboard = document.createElement('div');

@@ -1,4 +1,4 @@
-import { ObjKeys, keyCode } from "./keys.js";
+import { ObjKeys } from "./keys.js";
 
 function clickKeydown(code, keyboardScreen) {
   let keys = document.querySelectorAll(".keyboard__key");
@@ -11,7 +11,7 @@ function clickKeydown(code, keyboardScreen) {
       );
     } else if (item.getAttribute("data-code") == code &&  code == "CapsLock") {
       item.classList.toggle("keyboard__key-active");
-      if (keys[15].innerHTML == "q") {
+      if ((keys[15].innerHTML == "q") ||  (keys[15].innerHTML == 'й')) {
         keys.forEach((item) => {
           let str = item.innerHTML;
           if (isCharacterALetter(item) == true && str.length == 1) {
@@ -27,7 +27,7 @@ function clickKeydown(code, keyboardScreen) {
         });
       }
     }
-    else if(item.getAttribute('data-code') == code &&  code == "ShiftLeft") {
+    else if((item.getAttribute('data-code') == code &&  code == "ShiftLeft") || (item.getAttribute('data-code') == code &&  code == "ShiftRight")) {
       item.classList.add("keyboard__key-active")
       if((keys[15].innerHTML === 'q')) {
         keys.forEach((item, index) => {
@@ -46,29 +46,26 @@ function clickKeydown(code, keyboardScreen) {
             item.innerHTML = str.toLowerCase()
           }
         })
+      } else if((keys[15].innerHTML === 'й')) {
+        keys.forEach((item, index) => {
+          item.innerHTML = ObjKeys.ruSHift[index]
+          let str = item.innerHTML;
+          if(((isCharacterALetterRu(item)) == true) && (str.length == 1)) {
+            item.innerHTML = str.toUpperCase()
+          }
+        })      
+      } else if((keys[15].innerHTML === 'Й')) {
+        keys.forEach((item, index) => {
+          item.innerHTML = ObjKeys.ru[index]
+          let str = item.innerHTML;
+          if(((isCharacterALetterRu(item)) == true) && (str.length == 1)) {
+            item.innerHTML = str.toLowerCase()
+          }
+        })  
       }
     }
      else if(item.getAttribute('data-code') == code  &&  code == "Tab") {
       item.classList.add("keyboard__key-active");
-    } else if(item.getAttribute('data-code') == code &&  code == "ShiftRight") {
-      item.classList.add("keyboard__key-active")
-      if((keys[15].innerHTML === 'q')) {
-        keys.forEach((item, index) => {
-          item.innerHTML = ObjKeys.enShift[index]
-          let str = item.innerHTML;
-          if(((isCharacterALetter(item)) == true) && (str.length == 1)) {
-            item.innerHTML = str.toUpperCase()
-          }
-        })
-      } else if((keys[15].innerHTML === 'Q')) {
-        keys.forEach((item, index) => {
-          item.innerHTML = ObjKeys.enShift[index]
-          let str = item.innerHTML;
-          if(((isCharacterALetter(item)) == true) && (str.length == 1)) {
-            item.innerHTML = str.toLowerCase()
-          }
-        })
-      }
     }
      else if(item.getAttribute('data-code') == code  &&  code == "Delete") {
       item.classList.add("keyboard__key-active")
@@ -97,7 +94,9 @@ function clickKeydown(code, keyboardScreen) {
     }
   });
 
-
+  function isCharacterALetterRu(char) {
+    return (/[а-яA-Я]/).test(char)
+  }
     
   function isCharacterALetter(char) {
     return /[a-zA-Z]/.test(char);
@@ -110,17 +109,34 @@ function returnShiftKeyboard(event) {
   if((event  == 'ShiftLeft') ||(event == 'ShiftRight')) {
     if((keys[15].innerHTML === 'q')) {
       keys.forEach((item, index) => {
-        item.innerHTML = ObjKeys.en[index]
+        item.innerHTML = ObjKeys.enShift[index]
         let str = item.innerHTML;
         if(((isCharacterALetter(item)) == true) && (str.length == 1)) {
           item.innerHTML = str.toUpperCase()
         }
-      })      
-    } else if((keys[15].innerHTML === 'Q')) {
+      })
+    } 
+    else if((keys[15].innerHTML === 'Q')) {
       keys.forEach((item, index) => {
-        item.innerHTML = ObjKeys.en[index]
+        item.innerHTML = ObjKeys.enShift[index]
         let str = item.innerHTML;
         if(((isCharacterALetter(item)) == true) && (str.length == 1)) {
+          item.innerHTML = str.toLowerCase()
+        }
+      })
+    } else if((keys[15].innerHTML === 'й')) {
+      keys.forEach((item, index) => {
+        item.innerHTML = ObjKeys.ruSHift[index]
+        let str = item.innerHTML;
+        if(((isCharacterALetterRu(item)) == true) && (str.length == 1)) {
+          item.innerHTML = str.toUpperCase()
+        }
+      })      
+    } else if((keys[15].innerHTML === 'Й')) {
+      keys.forEach((item, index) => {
+        item.innerHTML = ObjKeys.ru[index]
+        let str = item.innerHTML;
+        if(((isCharacterALetterRu(item)) == true) && (str.length == 1)) {
           item.innerHTML = str.toLowerCase()
         }
       })  
@@ -128,6 +144,9 @@ function returnShiftKeyboard(event) {
   }
   function isCharacterALetter(char) {
     return (/[a-zA-Z]/).test(char)
+  }
+  function isCharacterALetterRu(char) {
+    return (/[а-яA-Я]/).test(char)
   }
 }
 
