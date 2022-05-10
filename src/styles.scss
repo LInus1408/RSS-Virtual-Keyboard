@@ -33,11 +33,20 @@ body {
   border: 2px solid #f6ff68;
   border-radius: 3px;
   padding: 10px;
-  gap: 25px;
+  gap: 10px;
   box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .keyboard_line {
-  @include flex-block(space-around, row, center);
+  @include flex-block(space-between, row, center);
   width: 100%;
-  gap: 20px;
+  gap: 5px;
+}
+
+.text-lang {
+  text-align: center;
+  @include font(500, 16px, 16px, $color-font2);
+  margin-top: 50px;
 }

@@ -1,4 +1,4 @@
-import  {ObjKeys} from './keys.js';
+import  {ObjKeys, keyCode} from './keys.js';
 
 function getKeyboard() {
   const mainTitle = document.createElement('h1');
@@ -44,9 +44,12 @@ function getKeyboard() {
       }
   }
 
+
   const keys = document.querySelectorAll('.keyboard__key');
 
-  keys[0].classList.add("keyboard__key_special")
+  keys.forEach((item, index) => {
+   item.setAttribute('data-code', `${keyCode.keys[index]}`)
+  })
   const descLangSwitch = document.createElement('p');
   descLangSwitch.className = "text-lang";
   descLangSwitch.innerHTML = 'To switch the language combination: left ctrl + alt'
