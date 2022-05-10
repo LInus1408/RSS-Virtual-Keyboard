@@ -4,10 +4,23 @@ import  {clickMouseKey, mouseupKey, returnShift} from './scripts/event_key'
 import  {clickKeydown, returnShiftKeyboard} from './scripts/event_keyboard'
 import  {changeLang} from './scripts/changeLang'
 
-getKeyboard()
+getKeyboard(localStorage.getItem('lang') )
+
 const keyboard = document.querySelector('.keyboard');
 const keyboardScreen = document.querySelector('.keyboard-Screen')
 const keys = document.querySelectorAll('.keyboard__key');
+
+
+
+function chooseLang() {
+  if(keys[15].innerHTML == 'Q' || keys[15].innerHTML == 'q') {
+    return 'en';
+  } else {
+    return 'ru'
+  }
+}
+
+
 
 
 
@@ -39,4 +52,9 @@ document.addEventListener('keyup', (event) => {
   returnShiftKeyboard(event.code) 
   mouseupKey(keys)
 })
+
+function setLocalStorage() {
+  localStorage.setItem("lang", chooseLang());
+}
+window.addEventListener("beforeunload", setLocalStorage);
 
