@@ -35,9 +35,6 @@ body {
   padding: 10px;
   gap: 10px;
   box-sizing: border-box;
-  &:hover {
-    cursor: pointer;
-  }
 }
 .keyboard_line {
   @include flex-block(space-between, row, center);

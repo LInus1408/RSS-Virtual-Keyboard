@@ -476,9 +476,8 @@ li {
   color: white;
 }
 .keyboard__key:hover {
-  background: #ede4f9 !important;
   box-shadow: 0px 2px 15px 4px #1abc9c;
-  color: #000;
+  cursor: pointer;
 }
 
 .keyboard__key-active {
@@ -637,9 +636,6 @@ body {
   padding: 10px;
   gap: 10px;
   box-sizing: border-box;
-}
-.keyboard:hover {
-  cursor: pointer;
 }
 
 .keyboard_line {
