@@ -15,7 +15,6 @@ function getKeyboard() {
   keyboardScreen.setAttribute('name', 'screen');
   keyboardScreen.setAttribute('rows', 15)
   keyboardScreen.setAttribute('cols', 80)
-  keyboardScreen.setAttribute('autofocus', '')
   appKeyboard.append(keyboardScreen);
 
   const keyboard = document.createElement('div');
