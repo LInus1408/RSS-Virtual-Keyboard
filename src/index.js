@@ -11,8 +11,6 @@ const keys = document.querySelectorAll('.keyboard__key');
 
 
 
-
-
 keyboard.addEventListener('mousedown', (event) => {
  
   clickMouseKey(event.target, keyboardScreen)
@@ -24,6 +22,7 @@ keyboard.addEventListener('mouseup', (event) => {
 })
 
 document.addEventListener('keydown', function(event) {
+
   clickKeydown(event.code, keyboardScreen)
 });
 
